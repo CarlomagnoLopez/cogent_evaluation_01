@@ -30,7 +30,7 @@ class Comp  extends Component {
                 return(
                   <div>
                     <p>
-                      {item.name + " and he start to work on cogent at " + item.startOnCongent + "."}
+                      {item.name + " is a " + item.position + " and he start to work on cogent at " + item.startOnCongent + "."}
 
                       
                     </p>
