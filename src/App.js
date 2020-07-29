@@ -1,8 +1,5 @@
 
 import React, { Component } from 'react';
-let name = "carlo";
-let position = "developer";
-let  year = "320"
 
 const Array =
 [{
