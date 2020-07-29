@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+let name = "carlo";
+let position = "developer";
+let  year = "320"
+
+const Array =
+[{
+  name: "Carlomagno",
+  position: "Sr Developer",
+  coworkerOnCogent: true,
+  startOnCongent: "2019"
+
+},
+
+{
+name: "Sai",
+  position: "Lead developer",
+  coworkerOnCogent: true,
+  startOnCongent: "2017"
 }
+]
 
-export default App;
+
+
+class Comp  extends Component {
+  
+  
+  render() { 
+    return <div>
+            {
+              Array.map((item) => {
+                return(
+                  <div>
+                    <p>
+                      {item.name + " and he start to work on cogent at " + item.startOnCongent + "."}
+
+                      
+                    </p>
+                    </div>
+                )
+              })
+            }
+    
+    </div>
+  }
+}
+ 
+
+export default Comp;
